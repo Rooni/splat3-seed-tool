@@ -1,0 +1,68 @@
+{
+  "B00": {
+    "name": "SquidForce"
+  },
+  "B01": {
+    "name": "Zink"
+  },
+  "B02": {
+    "name": "Krak-On"
+  },
+  "B03": {
+    "name": "Rockenberg"
+  },
+  "B04": {
+    "name": "Zekko"
+  },
+  "B05": {
+    "name": "Forge"
+  },
+  "B06": {
+    "name": "Firefin"
+  },
+  "B07": {
+    "name": "Skalop"
+  },
+  "B08": {
+    "name": "Splash Mob"
+  },
+  "B09": {
+    "name": "Inkline"
+  },
+  "B10": {
+    "name": "Tentatek"
+  },
+  "B11": {
+    "name": "Takoroka"
+  },
+  "B15": {
+    "name": "Annaki"
+  },
+  "B16": {
+    "name": "Enperry"
+  },
+  "B17": {
+    "name": "Toni Kensa"
+  },
+  "B18": {
+    "name": "Z+F"
+  },
+  "B19": {
+    "name": "Barazushi"
+  },
+  "B20": {
+    "name": "Emberz"
+  },
+  "B97": {
+    "name": "Grizzco"
+  },
+  "B98": {
+    "name": "Cuttlegear"
+  },
+  "B99": {
+    "name": "amiibo"
+  },
+  "None": {
+    "name": "No Brand"
+  }
+}
