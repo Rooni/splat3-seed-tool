@@ -1,5 +1,8 @@
 import brandTraits from "../data/json/BrandTraitsParam.json";
 import {abilityMap} from "../data/abilities.ts";
+import {GearType} from "../types.ts";
+
+import MurmurHash3 from "murmurhash3js";
 
 export const internalAbilityOrder = [
   "MainInk_Save",
@@ -88,4 +91,15 @@ export const getNextAbility = (seed: number, brand: string, drink?: number) => {
     ret = getBrandedAbility(newSeed % maxBrandNum(brand, drink), brand, drink)
   }
   return [ret, newSeed];
+}
+
+export const getGearInitialSeed = (userId: string, gearId: number, gearType: GearType) => {
+  let hashKey = `${userId}_${gearType}_${gearId}`
+  if (gearType === GearType.Clothes && gearId === 26000){
+    // Splatfest tee, idk the reason but the hash key is different
+    hashKey += "_JUEA-00015"
+  }
+  const initialSeed = MurmurHash3.x86.hash32(hashKey) >>> 0
+  console.log(`Initial seed: ${initialSeed.toString(16)}`)
+  return initialSeed
 }

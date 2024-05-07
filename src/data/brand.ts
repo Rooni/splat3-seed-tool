@@ -1,3 +1,5 @@
+import {Brand} from "../types.ts";
+
 export const brandImages = import.meta.glob('@assets/brand/*.png', { eager: true, as: 'url' })
 
 import brandDetails from "./json/BrandDetails.json";
@@ -28,8 +30,12 @@ export const brandIdMap = [
   "None",
 ]
 
+export const getAllBrands = () => {
+  return brandIdMap.map(getBrandData);
+}
+
 export const getBrandData = (brand: string | number) => {
-  let brandKey;
+  let brandKey: string;
   if (typeof brand === "string"){
     brandKey = brand;
   }else if (typeof brand === "number"){
@@ -40,7 +46,8 @@ export const getBrandData = (brand: string | number) => {
   let { UnusualGearSkill: uncommonAbility, UsualGearSkill: commonAbility } = brandTraits.Traits[brandKey];
 
   return {
-    id: brandKey,
+    id: Brand[brandKey],
+    key: brandKey,
     "name": brandDetails[brandKey].name,
     image: brandImages[`/src/assets/brand/${brandKey}.png`],
     commonAbility: commonAbility,

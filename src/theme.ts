@@ -8,6 +8,20 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({
   ...config,
+  "colors": {
+    "gray": {
+      "50": "#EDF3F7",
+      "100": "#CEDDE9",
+      "200": "#AEC8DB",
+      "300": "#8EB2CD",
+      "400": "#6E9DBF",
+      "500": "#4E87B1",
+      "600": "#3F6C8D",
+      "700": "#2F516A",
+      "800": "#1F3647",
+      "900": "#101B23"
+    }
+  },
   styles: {
     global: {
       'html': {

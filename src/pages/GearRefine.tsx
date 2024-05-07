@@ -19,7 +19,7 @@ import * as types from "../types.ts";
 import {abilityNameMap, abilityObjects} from "../data/abilities.ts";
 import {BrandPicker} from "../components/BrandPicker.tsx";
 import {GearDetail} from "../components/GearDetail.tsx";
-import {AbilityPicker} from "../components/AbilityPicker.tsx";
+import {AbilityPicker} from "../components/input/AbilityPicker.tsx";
 import {getNextAbility, internalAbilityOrder} from "../utils/gearseed.ts";
 import {useState} from "react";
 import {getBrandData} from "../data/brand.ts";

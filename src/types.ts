@@ -1,6 +1,31 @@
 
-export enum Brand {
+export type Profile = {
+  npln_user_id: string;
+}
 
+export enum Brand {
+  "B00",
+  "B01",
+  "B02",
+  "B03",
+  "B04",
+  "B05",
+  "B06",
+  "B07",
+  "B08",
+  "B09",
+  "B10",
+  "B11",
+  "B15",
+  "B16",
+  "B17",
+  "B18",
+  "B19",
+  "B20",
+  "B97",
+  "B98",
+  "B99",
+  "None",
 }
 
 export enum Ability {
@@ -25,16 +50,27 @@ export enum Ability {
   Exorcist,
   ObjectEffect_Up,
   SomersaultLanding,
-  Empty,
+  Unknown,
 }
 
 export type Gear = {
+  id: number;
+  brand: Brand;
+  type: GearType;
+  mainAbility: Ability
+  abilityHistory?: Ability[]
+}
+
+export enum GearType {
+  Head="Head",
+  Clothes="Clothes",
+  Shoes="Shoes",
+}
+
+export type TrackedGear = {
   name: string;
   uuid: string;
-  brand: string;
-  randomContext?: number;
-  mainAbility?: number;
-  abilityHistory: Ability[];
+  seed?: number;
+  gear: Partial<Gear>;
   favorite: boolean;
-
 }

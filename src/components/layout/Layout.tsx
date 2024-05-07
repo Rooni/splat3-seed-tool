@@ -8,7 +8,7 @@ export const Layout = () => {
     <Container maxW='1200px'>
 
       <VStack gap={2} align='stretch'>
-        <Heading my={4}>s3 gear seed checker</Heading>
+        <Heading my={4}>splat3-seed-tool</Heading>
         <NavBar></NavBar>
         <Outlet/>
       </VStack>

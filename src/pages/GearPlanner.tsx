@@ -1,6 +1,6 @@
 import {Button, Card, CardBody, Checkbox, Heading, HStack, Stack, VStack} from "@chakra-ui/react";
 import {useParams} from "react-router-dom";
-import {AbilityPicker} from "../components/AbilityPicker.tsx";
+import {AbilityPicker} from "../components/input/AbilityPicker.tsx";
 import {Ability} from "../types.ts";
 import {useState} from "react";
 import {AbilityButton} from "../components/AbilityButton.tsx";

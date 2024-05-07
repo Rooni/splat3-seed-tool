@@ -23,6 +23,10 @@ const navItems = [
     name: "Refine",
     to: "/refine"
   },
+  {
+    name: "Profile",
+    to: "/profile"
+  },
 ]
 
 export const NavBar = () => {

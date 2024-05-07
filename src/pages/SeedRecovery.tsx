@@ -15,7 +15,7 @@ import {useState} from "react";
 import {Ability} from "../types.ts";
 import {getNextAbility} from "../utils/gearseed.ts";
 import {AbilityImage} from "../components/AbilityImage.tsx";
-import {AbilityPicker} from "../components/AbilityPicker.tsx";
+import {AbilityPicker} from "../components/input/AbilityPicker.tsx";
 import {BrandSelect} from "../components/input/BrandSelect.tsx";
 
 
